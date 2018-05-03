@@ -521,7 +521,9 @@ line-height: 50px;
 .merchandise-center-paging .pagination {
   margin: 40px 0;
 }
-
+.merchandise-center-paging-nav{
+  margin: 0 10px;
+}
 .merchandise .merchandise-paging>li>a {
   padding: 10px 18px;
   color: #000000;
