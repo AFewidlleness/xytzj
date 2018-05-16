@@ -3,14 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/secondHand.js"></script>
     <script src="js/holder.js"></script>
-    <title>湖应跳蚤街</title>
+    <title>跳蚤街</title>
 </head>
 
 <body>
@@ -127,37 +128,6 @@
             </li>
         </ul>
     </div>
-    <!-- phone-user-center -->
-    <div class="phone-user-center">
-        <div class="container">
-            <div class="phone-position">
-                <p class="phone-position-txt">
-                    <span class="glyphicon glyphicon-map-marker"></span>
-                    <span>湖南应用技术学院</span>
-                </p>
-                <p>
-                    <a href="#">切换学校</a>
-                </p>
-            </div>
-            <!-- <div class="phone-content">
-                <div class="phone-content-issue">
-
-                    <a href="#">
-                        <span class="glyphicon glyphicon-send"></span>
-                        <span>发布商品</span>
-                    </a>
-                </div>
-                <div class="phone-content-user">
-
-                    <a href="#">
-                        <span class="glyphicon glyphicon-user"></span>
-                        <span>个人中心</span>
-                    </a>
-                </div>
-            </div> -->
-        </div>
-    </div>
-
     <!-- top -->
     <div class="top">
         <div class="top-center">
@@ -232,8 +202,11 @@
         <div class="dhl-center">
             <ul class="dhl-center-menu">
                 <li class="dhl-center-li-one">
-                    <span class="classify">全部商品分类</span>
-                    <div class="dhl-center-menu-classify">
+                    <span class="classify" id="dhl-center-menu-toggle">
+                        全部商品分类
+                        <span class="caret"></span>
+                    </span>
+                    <div class="dhl-center-menu-classify" id="dhl-center-menu-classify" style="display: none;">
                         <ul class="dhl-classify-menu">
                             <li>
                                 <dl>
@@ -395,22 +368,22 @@
                     <a href="#">服装</a>
                 </li>
                 <li>
-                    <a href="productList.html">书籍</a>
+                    <a href="#">书籍</a>
                 </li>
                 <li>
-                    <a href="productList.html">数码</a>
+                    <a href="#">数码</a>
                 </li>
                 <li>
-                    <a href="productList.html">文具</a>
+                    <a href="#">文具</a>
                 </li>
                 <li>
-                    <a href="productList.html">桌椅</a>
+                    <a href="#">桌椅</a>
                 </li>
                 <li>
-                    <a href="productList.html">外卖</a>
+                    <a href="#">外卖</a>
                 </li>
                 <li>
-                    <a href="productList.html">兼职</a>
+                    <a href="#">兼职</a>
                 </li>
                 <li>
                     <a href="productList.html">联系我们</a>
@@ -418,66 +391,150 @@
             </ul>
         </div>
     </div>
-    <!-- lbt -->
-    <div class="lbt">
-        <div class="container lbt-pl">
-            <div class="col-md-10 pull-right" style="padding-right: 0;">
-                <div class="lbt-center-right">
-                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                        <!-- 小圆点 -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        </ol>
-                        <!-- 轮播图片 -->
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <span class="lbt-center-right-img">
-                                    <img src="image/详情页_05.jpg" alt="...">
-                                </span>
-                            </div>
-                            <div class="item">
-                                <span class="lbt-center-right-img">
-                                    <img src="holder.js/100px490?theme=red" alt="...">
-                                </span>
-                            </div>
-                        </div>
-                        <!-- 左右 -->
-                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- merchandise -->
-    <div class="merchandise">
+    <div class="productList">
         <div class="container">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="#">首页</a>
+                </li>
+                <li>
+                    <a href="#">数码</a>
+                </li>
+                <li class="active">手机</li>
+            </ol>
             <div class="row">
-                <div class="merchandise-centertitle" style="margin-bottom: 15px;">
-                    <p>
-                        数码产品
-                        <a href="#">更多&gt;&gt;</a>
-                    </p>
-                </div>
                 <div class="col-md-3 col-sm-6 col-xs-6 merchandise-pr">
                     <div class="merchandise-center-product">
-                        <a href="productDetails.html" class="merchandise-center-product-img">
+                        <a href="#" class="merchandise-center-product-img">
                             <img src="holder.js/100px200?random=yes" class="img-responsive" alt="">
                         </a>
                         <h5>
-                            <a href="#">捷威笔记本电脑</a>
+                            <a href="#">小米手机7</a>
                         </h5>
                         <p>
                             <i>
                                 <em>￥</em>2000</i>
-                            <span>发布:5月6日</span>
+                            <span>发布:4月29日</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 merchandise-pl">
+                    <div class="merchandise-center-product">
+                        <a href="#" class="merchandise-center-product-img">
+                            <img src="holder.js/100px200?random=yes" class="img-responsive" alt="">
+                        </a>
+                        <h5>
+                            <a href="#">小米手机7</a>
+                        </h5>
+                        <p>
+                            <i>
+                                <em>￥</em>2000</i>
+                            <span>发布:4月29日</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 merchandise-pr">
+                    <div class="merchandise-center-product">
+                        <a href="#" class="merchandise-center-product-img">
+                            <img src="holder.js/100px200?random=yes" class="img-responsive" alt="">
+                        </a>
+                        <h5>
+                            <a href="#">小米手机7</a>
+                        </h5>
+                        <p>
+                            <i>
+                                <em>￥</em>2000</i>
+                            <span>发布:4月29日</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 merchandise-pl">
+                    <div class="merchandise-center-product">
+                        <a href="#" class="merchandise-center-product-img">
+                            <img src="holder.js/100px200?random=yes" class="img-responsive" alt="">
+                        </a>
+                        <h5>
+                            <a href="#">小米手机7</a>
+                        </h5>
+                        <p>
+                            <i>
+                                <em>￥</em>2000</i>
+                            <span>发布:4月29日</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 merchandise-pr">
+                    <div class="merchandise-center-product">
+                        <a href="#" class="merchandise-center-product-img">
+                            <img src="holder.js/100px200?random=yes" alt="">
+                        </a>
+                        <h5>
+                            <a href="#">小米手机7</a>
+                        </h5>
+                        <p>
+                            <i>
+                                <em>￥</em>2000</i>
+                            <span>发布:4月29日</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 merchandise-pl">
+                    <div class="merchandise-center-product">
+                        <a href="#" class="merchandise-center-product-img">
+                            <img src="holder.js/100px200?random=yes" alt="">
+                        </a>
+                        <h5>
+                            <a href="#">小米手机7</a>
+                        </h5>
+                        <p>
+                            <i>
+                                <em>￥</em>2000</i>
+                            <span>发布:4月29日</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 merchandise-pr">
+                    <div class="merchandise-center-product">
+                        <a href="#" class="merchandise-center-product-img">
+                            <img src="holder.js/100px200?random=yes" alt="">
+                        </a>
+                        <h5>
+                            <a href="#">小米手机7</a>
+                        </h5>
+                        <p>
+                            <i>
+                                <em>￥</em>2000</i>
+                            <span>发布:4月29日</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 merchandise-pl">
+                    <div class="merchandise-center-product">
+                        <a href="#" class="merchandise-center-product-img">
+                            <img src="holder.js/100px200?random=yes" alt="">
+                        </a>
+                        <h5>
+                            <a href="#">小米手机7</a>
+                        </h5>
+                        <p>
+                            <i>
+                                <em>￥</em>2000</i>
+                            <span>发布:4月29日</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 merchandise-pr">
+                    <div class="merchandise-center-product">
+                        <a href="#" class="merchandise-center-product-img">
+                            <img src="holder.js/100px200?random=yes" class="img-responsive" alt="">
+                        </a>
+                        <h5>
+                            <a href="#">小米手机7</a>
+                        </h5>
+                        <p>
+                            <i>
+                                <em>￥</em>2000</i>
+                            <span>发布:4月29日</span>
                         </p>
                     </div>
                 </div>
@@ -587,167 +644,37 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row row-fd">
-                <div class="merchandise-centertitle" style="margin-bottom: 15px;">
-                    <p>
-                        书籍
-                        <a href="#">更多&gt;&gt;</a>
-                    </p>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6 merchandise-pr">
-                    <div class="merchandise-center-product">
-                        <a href="#" class="merchandise-center-product-img">
-                            <img src="image/详情页_05.jpg" alt="">
-                        </a>
-                        <h5>
-                            <a href="#">计算机基础</a>
-                        </h5>
-                        <p>
-                            <i>
-                                <em>￥</em>2000</i>
-                            <span>发布:4月29日</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6 merchandise-pl">
-                    <div class="merchandise-center-product">
-                        <a href="#" class="merchandise-center-product-img">
-                            <img src="holder.js/100px200?random=yes" alt="">
-                        </a>
-                        <h5>
-                            <a href="#">小米手机7</a>
-                        </h5>
-                        <p>
-                            <i>
-                                <em>￥</em>2000</i>
-                            <span>发布:4月29日</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6 merchandise-pr">
-                    <div class="merchandise-center-product">
-                        <a href="#" class="merchandise-center-product-img">
-                            <img src="holder.js/100px200?random=yes" alt="">
-                        </a>
-                        <h5>
-                            <a href="#">小米手机7</a>
-                        </h5>
-                        <p>
-                            <i>
-                                <em>￥</em>2000</i>
-                            <span>发布:4月29日</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6 merchandise-pl">
-                    <div class="merchandise-center-product">
-                        <a href="#" class="merchandise-center-product-img">
-                            <img src="holder.js/100px200?random=yes" alt="">
-                        </a>
-                        <h5>
-                            <a href="#">小米手机7</a>
-                        </h5>
-                        <p>
-                            <i>
-                                <em>￥</em>2000</i>
-                            <span>发布:4月29日</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6 merchandise-pr">
-                    <div class="merchandise-center-product">
-                        <a href="#" class="merchandise-center-product-img">
-                            <img src="holder.js/100px200?random=yes" alt="">
-                        </a>
-                        <h5>
-                            <a href="#">小米手机7</a>
-                        </h5>
-                        <p>
-                            <i>
-                                <em>￥</em>2000</i>
-                            <span>发布:4月29日</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6 merchandise-pl">
-                    <div class="merchandise-center-product">
-                        <a href="#" class="merchandise-center-product-img">
-                            <img src="holder.js/100px200?random=yes" alt="">
-                        </a>
-                        <h5>
-                            <a href="#">小米手机7</a>
-                        </h5>
-                        <p>
-                            <i>
-                                <em>￥</em>2000</i>
-                            <span>发布:4月29日</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6 merchandise-pr">
-                    <div class="merchandise-center-product">
-                        <a href="#" class="merchandise-center-product-img">
-                            <img src="holder.js/100px200?random=yes" alt="">
-                        </a>
-                        <h5>
-                            <a href="#">小米手机7</a>
-                        </h5>
-                        <p>
-                            <i>
-                                <em>￥</em>2000</i>
-                            <span>发布:4月29日</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6 merchandise-pl">
-                    <div class="merchandise-center-product">
-                        <a href="#" class="merchandise-center-product-img">
-                            <img src="holder.js/100px200?random=yes" alt="">
-                        </a>
-                        <h5>
-                            <a href="#">小米手机7</a>
-                        </h5>
-                        <p>
-                            <i>
-                                <em>￥</em>2000</i>
-                            <span>发布:4月29日</span>
-                        </p>
-                    </div>
-                </div>
+            <div class="merchandise-center-paging">
+                <nav class="merchandise-center-paging-nav">
+                    <ul class="pagination merchandise-paging pagination-sm">
+                        <li>
+                            <a href="#" class="merchandise-paging-pitchon">1</a>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            <a href="#">3</a>
+                        </li>
+                        <li>
+                            <a href="#">4</a>
+                        </li>
+                        <li>
+                            <a href="#">5</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>尾页</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>下一页</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </div>
-        <div class="merchandise-center-paging">
-            <nav class="merchandise-center-paging-nav">
-                <ul class="pagination merchandise-paging pagination-sm">
-                    <li>
-                        <a href="#" class="merchandise-paging-pitchon">1</a>
-                    </li>
-                    <li>
-                        <a href="#">2</a>
-                    </li>
-                    <li>
-                        <a href="#">3</a>
-                    </li>
-                    <li>
-                        <a href="#">4</a>
-                    </li>
-                    <li>
-                        <a href="#">5</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>尾页</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>下一页</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
         </div>
     </div>
     <!-- footer -->
@@ -782,37 +709,10 @@
             </div>
         </div>
     </div>
-
-    <!-- phone-bottom-tab -->
-    <div class="phone-bottom-tab">
-            <a href="index.html" class="phone-bottom-tab-item phone-bottom-tab-item-active" id="phone-bottom-tab-itemOne">
-                <i class="phone-bottom-tab-ico iconfont">&#xe702;</i>
-                <p>首页</p>
-            </a>
-            <a href="#" class="phone-bottom-tab-item" id="phone-bottom-tab-itemTwo">
-                <i class="phone-bottom-tab-ico iconfont">&#xe6e1;</i>
-                <p>发布</p>
-            </a>
-            <a href="myCenter.html" class="phone-bottom-tab-item" id="phone-bottom-tab-itemThree">
-                <i class="phone-bottom-tab-ico iconfont">&#xe70e;</i>
-                <p>我的</p>
-            </a>
-        </div>
-
     <!-- Back to Top -->
     <div id="goToTop" class="goToTop">
-        <a class="iconfont" href="javascript:;">&#xe629;</a>
-    </div>
+            <a class="iconfont" href="javascript:;">&#xe654;</a>
+        </div>
 </body>
-
-<script>
-    Holder.addTheme("red", {
-        bg: "#00ff00",
-        fg: "#aaa",
-        size: 11,
-        font: "Monaco",
-        fontweight: "normal"
-    });
-</script>
 
 </html>
