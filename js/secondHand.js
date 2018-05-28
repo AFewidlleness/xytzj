@@ -280,25 +280,26 @@ function my() {
 	$('#phone-bottom-tab-itemOne').click(function() {
 		$(this).addClass('phone-bottom-tab-item-active').find('i').html('&#xe702;').removeClass('phone-bottom-tab-item-active');
 		$('#phone-bottom-tab-itemTwo,#phone-bottom-tab-itemThree').removeClass('phone-bottom-tab-item-active');
-		$('#phone-bottom-tab-itemTwo').find('i').html('&#xe6e1;')
-		$('#phone-bottom-tab-itemThree').find('i').html('&#xe70e;')
+		$('#phone-bottom-tab-itemTwo').find('i').html('&#xe6e1;');
+		$('#phone-bottom-tab-itemThree').find('i').html('&#xe70e;');
 	});
 	$('#phone-bottom-tab-itemTwo').click(function() {
 		$(this).addClass('phone-bottom-tab-item-active').find('i').html('&#xe6e0;').removeClass('phone-bottom-tab-item-active');
 		$('#phone-bottom-tab-itemOne,#phone-bottom-tab-itemThree').removeClass('phone-bottom-tab-item-active');
-		$('#phone-bottom-tab-itemOne').find('i').html('&#xe703;')
-		$('#phone-bottom-tab-itemThree').find('i').html('&#xe70e;')
+		$('#phone-bottom-tab-itemOne').find('i').html('&#xe703;');
+		$('#phone-bottom-tab-itemThree').find('i').html('&#xe70e;');
+		
 	});
 	$('#phone-bottom-tab-itemThree').click(function() {
 		$(this).addClass('phone-bottom-tab-item-active').find('i').html('&#xe70f;').removeClass('phone-bottom-tab-item-active');
 		$('#phone-bottom-tab-itemOne,#phone-bottom-tab-itemTwo').removeClass('phone-bottom-tab-item-active');
-		$('#phone-bottom-tab-itemOne').find('i').html('&#xe703;')
-		$('#phone-bottom-tab-itemTwo').find('i').html('&#xe6e1;')
+		$('#phone-bottom-tab-itemOne').find('i').html('&#xe703;');
+		$('#phone-bottom-tab-itemTwo').find('i').html('&#xe6e1;');
 	});
 }
 
 function phoneMyMessage() {
-	$('.phone-bottom-tab').hide();
+	// $('.phone-bottom-tab').hide();
 	$('.phone-top-content-center .phone-hg').click(function() {
 		$('.phone-top-content-center').hide();
 		$('.phone-top,.phone-bottom-tab').show();
@@ -322,6 +323,7 @@ function phoneMyMessage() {
 		$('.phone-top,.phone-bottom-tab').hide();
 		$('.phone-top-content-center,.phone-top-content-center-release').show();
 		$('.phone-top-content-center').children().not($('.phone-top-content-center-release')).hide();
+		// $('body').css({"backgroundColor":'#f3f3f3'});
 	});
 	//个人信息
 	$('.phone-top-content-bottom a:eq(1)').click(function() {
@@ -354,6 +356,10 @@ function phoneMyMessage() {
 		$('.phone-top-content-center').children().not($('.phone-top-content-center-set')).hide();
 		$('body').css({"backgroundColor":'#f3f3f3'});
 	})
+	$('.phone-top-content-center-release-pProfile-fl a').click(function(){
+		$(this).addClass('fl-bb-co');
+		$('.phone-top-content-center-release-pProfile-fl a').not($(this)).removeClass('fl-bb-co')
+	})
 }
 
 
@@ -362,4 +368,6 @@ $(function(){
 	whatImgWidth=$('.phone-top-content-center-what-pProfile-pro-imgTwo img').outerWidth(true);
 	whatImgWidthSum=(whatImgNum*whatImgWidth)/10+'rem';
 	$('.phone-top-content-center-what-pProfile-pro-imgTwo').width(whatImgWidthSum);
+
+
 })
