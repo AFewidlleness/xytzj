@@ -458,9 +458,11 @@ li {
 .lbt {
 	width: 100%;
 }
-.lbt img{
+
+.lbt img {
 	width: 100%;
 }
+
 /* merchandise */
 
 .merchandise {
@@ -729,11 +731,13 @@ li {
 	padding: 15px 0;
 	border: 1px solid #dddddd;
 }
-.login-center::after{
+
+.login-center::after {
 	content: '';
 	display: block;
 	clear: both;
 }
+
 .login-top-img {
 	width: 100%;
 	margin-top: 20px;
@@ -809,11 +813,13 @@ li {
 	border: 1px solid #dddddd;
 	padding: 15px 0;
 }
+
 .register-center::after {
 	content: '';
 	display: block;
 	clear: both;
 }
+
 .form-group .register-btn-zc-tp {
 	margin-top: 15px;
 }
@@ -1130,7 +1136,8 @@ li {
 	border: 1px solid #dddddd;
 	height: 600px;
 }
-.myCenter-partTime-jianzhi{
+
+.myCenter-partTime-jianzhi {
 	width: 600px;
 	margin: 15px auto;
 }
@@ -1344,10 +1351,12 @@ li {
 .myCenter-leaveMeassge-form {
 	margin: 20px 0 35px 0;
 }
-.myCenter-leaveMeassge-form span{
+
+.myCenter-leaveMeassge-form span {
 	color: #999;
 	font-size: 12px;
 }
+
 .form-group .myCenter-leaveMeassge-form-radio input {
 	margin-right: 3px;
 	margin-left: 10px;
@@ -1477,7 +1486,7 @@ li {
 	background-color: #fff;
 }
 
-.myCenter-certification-sm-ite {
+.myCenter-certification-sm-ite,.myCenter-certification-sm-iteapp {
 	background-color: #fff;
 	border-bottom: #e4e4e4 solid 1px;
 	border-radius: 3px;
@@ -1513,10 +1522,11 @@ li {
 	color: #19b1d8;
 }
 
-.myCenter-certification-sm-ite-content {
+.myCenter-certification-sm-ite-content,.myCenter-certification-sm-ite-contentapp {
 	display: none;
 	padding: 25px 0;
 	width: 100%;
+	background-color: #fff;
 	border-bottom: 1px solid #e4e4e4;
 }
 
@@ -1524,6 +1534,13 @@ li {
 	margin: auto;
 	display: block;
 	padding: 6px 22px;
+}
+.myCenter-certification-sm-ite-contentapp-frWidth{
+	width: 80%;
+	margin:0 auto;
+}
+.myCenter-certification-sm-ite-contentapp-btnCtr{
+	text-align: center;
 }
 
 /* phone-top */
@@ -1534,7 +1551,7 @@ li {
 }
 
 .phone-top-content {
-	/* background-color: #eeeeee; */
+	/* display: none; */
 }
 
 .phone-top-content-head {
@@ -1644,12 +1661,13 @@ li {
 }
 
 .phone-top-content-center-release-pProfile-fl {
+	background-color: #FFFFFF;
 	text-align: center;
+	padding: 5px 0 10px 0;
 }
 
 .phone-top-content-center-release-pProfile-fl a {
 	color: #43474C;
-	background-color: #FFFFFF;
 	font-size: 14px;
 	height: 30px;
 	padding-top: 5px;
@@ -1672,7 +1690,7 @@ li {
 
 .phone-top-content-center-release-pProfile-head {
 	padding: 5px 10px;
-	/* border-top:10px solid #E4E4E4; */
+	background-color: #FFFFFF;
 	margin-top: 10px;
 }
 
@@ -1754,6 +1772,89 @@ li {
 
 .phone-top-content-center-message {
 	display: none
+}
+
+.phone-top-content-center-message-pProfile {
+	background-color: #fff;
+}
+
+.phone-top-content-center-message-pProfile-img {
+	padding: 0 15px;
+	font-size: 1.5rem;
+	height: 80px;
+	line-height: 80px;
+}
+
+.phone-top-content-center-message-pProfile-img img {
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.phone-top-content-center-message-pProfile-img-inp {
+	position: relative;
+	display: block;
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	float: right;
+	top: 5px;
+	color: #19b1d8;
+	text-decoration: none;
+	text-indent: 0;
+}
+
+.phone-top-content-center-message-pProfile-img-inp input {
+	position: absolute;
+	right: 0;
+	top: -6px;
+	opacity: 0;
+}
+
+.phone-top-content-center-message-pProfile-gy {
+	padding: 20px 15px;
+	font-size: 1.5rem;
+	border-top: 1px solid #e4e4e4;
+}
+
+.phone-top-content-center-message-pProfile-gy::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+.phone-top-content-center-message-pProfile-sex-lf {
+	width: 15%;
+	display: block;
+	float: left;
+}
+
+.phone-top-content-center-message-pProfile-sex-rt {
+	width: 80%;
+	text-align: right;
+	float: right;
+	color: #777777;
+}
+
+.phone-top-content-center-message-pProfile-gy p,
+.phone-top-content-center-message-pProfile-sex p {
+	margin: 0;
+}
+
+.phone-top-content-center-message-pProfile-gy input[type="text"] {
+	float: right;
+	border: none;
+	outline: none;
+	width: 82%;
+}
+
+.phone-top-content-center-message-pProfile-gy-text {
+	width: 100%;
+	border: none;
+	margin-top: 15px;
+	outline: none;
 }
 
 .phone-top-content-center-what {
@@ -1873,13 +1974,71 @@ li {
 .phone-top-content-center-published {
 	display: none;
 }
+.phone-top-content-center-published-pProfile-fl{
+	text-align: center;
+	background-color: #fff;
+	border-bottom: 10px solid #f4f4f4;
+}
+.phone-top-content-center-published-pProfile-fl .fl-bb-co {
+	border-bottom: 2px solid #FF5647;
+	color: #FF5647;
+}
+.phone-top-content-center-published-pProfile-fl a{
+	color: #43474C;
+	background-color: #FFFFFF;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	display: inline-block;
+}
+.phone-top-content-center-published-pProfile-fl span {
+	display: inline-block;
+	width: 40px;
+}
+.phone-top-content-center-published-pProfile-con {
+	padding: 15px;
+	margin-top: 10px;
+	background-color: #fff;
+}
+
+.phone-top-content-center-published-pProfile-con span:first-child {
+	font-weight: bold;
+	float: left;
+	display: block;
+}
+
+.phone-top-content-center-published-pProfile-con span:nth-child(2) {
+	color: #37cffc;
+	float: left;
+	margin-left: 5px;
+	display: block;
+}
+
+.phone-top-content-center-published-pProfile-con span:last-child {
+	color: #999;
+	font-size: 1.2rem;
+	margin-top: 2px;
+	display: block;
+	float: right;
+}
+.phone-top-content-center-published-pProfile-con p{
+	margin: 10px 0;
+}
+.phone-top-content-center-published-pProfile-con-tel::after{
+	content:'';
+	display: block;
+	clear: both;
+}
+
+.phone-top-content-center-published-pProfile-sd{
+	display: none;
+}
 
 .phone-top-content-center-certification {
 	display: none
 }
 
 .phone-top-content-center-set {
-	/* background-color: #f4f4f4; */
 	display: none
 }
 
@@ -1996,7 +2155,8 @@ li {
 
 .phone-publish-goods-classify-fl {
 	text-align: center;
-	border-bottom: 10px solid #e3e3e3;
+	background-color: #fff;
+	border-bottom: 10px solid #f4f4f4;
 }
 
 .phone-publish-goods-classify-fl a {
@@ -2022,8 +2182,147 @@ li {
 	width: 40px;
 }
 
+.phone-publish-goods-details-img {
+	padding: 10px 0;
+	background-color: #fff;
+}
 
+.phone-publish-goods-details-img p {
+	text-align: center;
+	color: #333333;
+}
 
+.phone-publish-goods-details-img-inp {
+	position: relative;
+	display: inline-block;
+	border: 1px dashed #1e90ff;
+	border-radius: 5px;
+	padding: 10px 30px 0 30px;
+	overflow: hidden;
+	color: #19b1d8;
+	text-decoration: none;
+	text-indent: 0;
+	left: 50%;
+	margin-left: -50px;
+	margin-top: 15px;
+	line-height: 44px;
+	-webkit-transition: .3s ease all;
+	-moz-transition: .3s ease all;
+	-ms-transition: .3s ease all;
+	-o-transition: .3s ease all;
+	transition: .3s ease all;
+}
+
+.phone-publish-goods-details-img-inp span {
+	font-size: 4rem;
+}
+
+.phone-publish-goods-details-img-inp input {
+	position: absolute;
+	font-size: 100px;
+	right: 0;
+	top: 0;
+	opacity: 0;
+}
+
+/* .phone-publish-goods-details{
+	padding: 0 15px;
+} */
+
+.phone-publish-goods-details-img-inp:hover {
+	color: #19b1d8;
+}
+
+.phone-publish-goods-details-tel {
+	margin-top: 10px;
+	background-color: #fff;
+}
+
+.phone-publish-goods-details-tel input {
+	border: none;
+	outline: none;
+	width: 100%;
+	padding: 0 15px;
+	height: 30px;
+	margin: 10px 0;
+}
+
+.phone-publish-goods-details-img-content {
+	margin-top: 2px;
+	background-color: #fff;
+}
+
+.phone-publish-goods-details-img-content-text {
+	width: 100%;
+	padding: 15px 15px 0 15px;
+	border: none;
+	outline: none;
+}
+
+.phone-publish-goods-details-img-jg {
+	margin-top: 10px;
+	background-color: #fff;
+	padding: 10px 15px;
+}
+
+.phone-publish-goods-details-img-btnCen {
+	text-align: center;
+	background-color: #fff;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	font-family: 微软雅黑;
+}
+
+.phone-publish-goods-details-img-btn {
+	width: 90%;
+	padding: 10px 0;
+	margin: 10px 0;
+	background-color: #FF5647;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+}
+
+.phone-publish-goods-details-img-jgTex {
+	border: none;
+	outline: none;
+	height: 35px;
+	width: 36%;
+	margin-right: 30px;
+}
+
+.phone-publish-goods-details-img-jg input[type="checkbox"] {
+	margin-right: 3px;
+	position: relative;
+	top: 2px;
+}
+
+.phone-publish-goods-details-img-xzfl-deal {
+	color: #666;
+	width: 80%;
+	float: left;
+}
+
+.phone-publish-goods-details-img-xzfl-tel {
+	width: 11%;
+	float: left;
+}
+
+.phone-publish-goods-details-img-xzfl-lf {
+	background-color: #fff;
+	padding: 15px;
+	font-size: 1.5rem;
+	;
+	margin-top: 2px;
+}
+
+.phone-publish-goods-details-img-xzfl-lf::after {
+	content: '';
+	clear: both;
+	display: block;
+}
 
 /* myCenter.html end */
 
@@ -2380,7 +2679,6 @@ li {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
-	border: 1px solid black;
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -2527,9 +2825,9 @@ li {
 	.text-center {
 		display: none;
 	}
-  .login-center{
-padding-bottom: 25px;
-  }
+	.login-center {
+		padding-bottom: 25px;
+	}
 	.merchandise {
 		margin-top: 0px;
 		margin-bottom: 70px;
@@ -2546,7 +2844,6 @@ padding-bottom: 25px;
 	.form-group .register-yzm {
 		margin-left: 10px;
 	}
-	
 }
 
 @media screen and (min-width: 770px) {
@@ -2556,7 +2853,8 @@ padding-bottom: 25px;
 	.phone-bottom-tab,
 	.phone-top,
 	.phone-header-pro,
-	.phone-login {
+	.phone-login,
+	.phone-top-content-center {
 		display: none;
 	}
 	.login .login-plr {
@@ -2575,5 +2873,8 @@ padding-bottom: 25px;
 	}
 	.merchandise-center-paging .pagination {
 		margin: 40px 0;
+	}
+	body{
+		background-color: #fff;
 	}
 }

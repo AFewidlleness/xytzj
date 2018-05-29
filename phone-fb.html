@@ -7,14 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mobileSelect.css">
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/secondHand.js"></script>
     <script src="js/holder.js"></script>
+    <script src="js/mobileSelect.min.js"></script>
     <title>跳蚤街</title>
 </head>
 
-<body>
+<body style="background-color: #f4f4f4;">
     <!-- phone-Publish-goods -->
     <div class="phone-publish-goods">
         <div class="phone-top-content-center-head">
@@ -33,11 +35,41 @@
             </div>
         </div>
         <div class="phone-publish-goods-details">
-            <div class="phone-publish-goods-details-img"></div>
-            <div class="phone-publish-goods-details-tel"></div>
-            <div class="phone-publish-goods-details-img-content">
-                
-            </div>
+            <form action="">
+                <div class="phone-publish-goods-details-img">
+                    <a class="phone-publish-goods-details-img-inp">
+                        <input type="file">
+                        <span class="iconfont">&#xe6e1;</span>
+                    </a>
+                    <p>上传图片</p>
+                </div>
+                <div class="phone-publish-goods-details-tel">
+                    <input type="search" name="" id="" placeholder="请输入标题">
+                </div>
+                <div class="phone-publish-goods-details-img-content">
+                    <textarea name="" id="" rows="5" class="phone-publish-goods-details-img-content-text" placeholder="在这里描述一下你的宝贝吧"></textarea>
+                </div>
+                <div class="phone-publish-goods-details-img-jg">
+                    <span>价格:</span>
+                    <input type="text" placeholder="0.00" class="phone-publish-goods-details-img-jgTex">
+                    <input type="checkbox" name="" id="">可小刀
+                </div>
+                <div class="phone-publish-goods-details-img-btnCen">
+                    <button class="phone-publish-goods-details-img-btn">确认发布</button>
+                </div>
+                <div class="phone-publish-goods-details-img-xzfl-lf">
+                    <div class="phone-publish-goods-details-img-xzfl-tel">交易:</div>
+                    <div class="phone-publish-goods-details-img-xzfl-deal">
+                        <div id="phoneDeal">请选择交易方式</div>
+                    </div>
+                </div>
+                <div class="phone-publish-goods-details-img-xzfl-lf">
+                    <div class="phone-publish-goods-details-img-xzfl-tel">分类:</div>
+                    <div class="phone-publish-goods-details-img-xzfl-deal">
+                        <div id="phoneClassify">请选择分类</div>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </body>
