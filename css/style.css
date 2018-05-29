@@ -568,7 +568,7 @@ li {
 }
 
 .merchandise-center-product p {
-	margin: 0 5px;
+	margin: 0 4px;
 	line-height: 20px;
 }
 
@@ -1500,6 +1500,12 @@ li {
 	float: left;
 }
 
+.myCenter-certification-sm-ite-findapp {
+    width: 33%;
+    line-height: 80px;
+    padding: 0 20px 0 20px;
+    float: left;
+}
 .certification-sm-iteOne {
 	text-align: left;
 }
@@ -1640,17 +1646,9 @@ li {
 }
 
 .phone-top-content-center {
-	/* display: none; */
-	/* background-color: #f4f4f4; */
+	margin-bottom: 80px;	
 }
 
-/* .phone-top-content-center-postTrade {
-  display: none;
-}
-
-.phone-top-content-center-partTime {
-  display: none
-} */
 
 .phone-top-content-center-release {
 	display: none
@@ -2046,6 +2044,9 @@ li {
 	text-align: center;
 	position: relative;
 }
+.phone-publish-goods-details{
+	margin-bottom: 80px;
+}
 
 .phone-top-content-center-head p {
 	line-height: 4rem;
@@ -2197,13 +2198,13 @@ li {
 	display: inline-block;
 	border: 1px dashed #1e90ff;
 	border-radius: 5px;
-	padding: 10px 30px 0 30px;
+	padding: 10px 50px 0 50px;
 	overflow: hidden;
 	color: #19b1d8;
 	text-decoration: none;
 	text-indent: 0;
 	left: 50%;
-	margin-left: -50px;
+	margin-left: -70px;
 	margin-top: 15px;
 	line-height: 44px;
 	-webkit-transition: .3s ease all;
@@ -2306,7 +2307,7 @@ li {
 }
 
 .phone-publish-goods-details-img-xzfl-tel {
-	width: 11%;
+	width: 14%;
 	float: left;
 }
 
@@ -2771,6 +2772,7 @@ li {
 .phone-header-content-ly {
 	padding: 0 15px;
 	margin-top: 10px;
+	margin-bottom: 60px;
 	padding-bottom: 50px;
 }
 
